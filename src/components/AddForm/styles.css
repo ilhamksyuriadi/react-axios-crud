@@ -1,0 +1,22 @@
+.form-container {
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 180px;
+    justify-content: space-around;
+}
+
+.form-container h1 {
+    margin: 0px;
+}
+
+.form-container button {
+    background-color: rgb(92, 92, 208);
+    color: white;
+}
+
+.form-container button:hover {
+    background-color: rgb(111, 111, 237);
+    cursor: pointer;
+}
