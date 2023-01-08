@@ -1,0 +1,31 @@
+.card {
+    background-color: rgb(242, 242, 242);
+    width: 90%;
+    margin-bottom: 24px;
+    box-shadow: 5px 5px 5px #888888;
+    border-radius: 8px;
+    display: flex;
+}
+
+.data-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+.button-container {
+    display: grid;
+    place-items: center;
+}
+
+.button-container button {
+    background-color: rgb(207, 83, 83);
+    color: white;
+}
+
+.button-container button:hover {
+    background-color: rgb(236, 105, 105);
+    cursor: pointer;
+}

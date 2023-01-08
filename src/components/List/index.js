@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import Card from './components/Card'
+import './styles.css'
 
 const List = () => {
     const [users, setUsers] = useState([])
@@ -17,11 +19,11 @@ const List = () => {
     }, [])
 
     return (
-        <>
+        <div className='list'>
             {
-                users?.map(users => <p>{users.name}</p>)
+                users?.map((user, index) => <Card key={index} name={user.name} userName={user.username} email={user.email} />)
             }
-        </>
+        </div>
     )
 }
 
