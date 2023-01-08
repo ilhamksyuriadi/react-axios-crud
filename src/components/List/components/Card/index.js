@@ -1,10 +1,19 @@
 import React from 'react'
+import axios from 'axios'
 import './styles.css'
 
-const Card = ({ name, userName, email }) => {
+const Card = ({ id, name, userName, email }) => {
 
     const handleClickDelete = () => {
         console.log('delete button clicked')
+        const url = `https://jsonplaceholder.typicode.com/users/${id}`
+        axios.delete(url)
+            .then(res => {
+                console.log(res)
+            })
+            .catch(err => {
+                console.log(err)
+            })
     }
 
     return (

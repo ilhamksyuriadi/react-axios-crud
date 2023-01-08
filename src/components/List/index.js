@@ -21,7 +21,7 @@ const List = () => {
     return (
         <div className='list'>
             {
-                users?.map((user, index) => <Card key={index} name={user.name} userName={user.username} email={user.email} />)
+                users?.map((user, index) => <Card key={index} id={user.id} name={user.name} userName={user.username} email={user.email} />)
             }
         </div>
     )
